@@ -1038,9 +1038,14 @@ header.abajo .navbar ul .Navegacion a::after {
     .floatWhatsapp {
         width: 40px; /* Botón más pequeño */
         height: 40px;
-        font-size: 20px; /* Icono más pequeño */
+        font-size: 23px; /* Icono más pequeño */
         bottom: 20px;
         right: 20px;
+
+        
+    }
+    .my-floatWhatsapp {
+        margin-top: 25%;
     }
     .my-floatTelefono {
         font-size: 16px; /* Icono más pequeño */
