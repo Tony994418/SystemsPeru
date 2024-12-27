@@ -538,6 +538,7 @@ header.abajo .navbar ul .Navegacion a::after {
   }
 
   .arrows button {
+    margin-bottom: -40%;
     width: 30px;
     height: 30px;
     font-size: 14px;
@@ -983,7 +984,72 @@ header.abajo .navbar ul .Navegacion a::after {
     margin-top: 16px;
 }
 
+/*Responsive botones telefono y whatsapp*/
+/* Para tablets (pantallas medianas) */
+/* Para tablets (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .floatTelefono1,
+    .floatTelefono2 {
+        right: 25px;
+        font-size: 14px; /* Reducir tamaño del texto */
+        padding: 0 12px; /* Botón más compacto */
+    }
 
+    .floatTelefono1 {
+        bottom: 150px;
+    }
+
+    .floatTelefono2 {
+        bottom: 100px;
+    }
+
+    .floatWhatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .numeroTelefono {
+        font-size: 14px; /* Texto más pequeño */
+    }
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+    .floatTelefono1,
+    .floatTelefono2 {
+        right: 15px;
+        width: auto; /* Adaptativo según texto */
+        height: 40px; /* Reducir altura del botón */
+        padding: 0 8px; /* Reducir relleno aún más */
+        font-size: 12px; /* Reducir tamaño del texto */
+    }
+
+    .floatTelefono1 {
+        bottom: 120px;
+    }
+
+    .floatTelefono2 {
+        bottom: 70px;
+    }
+
+    .floatWhatsapp {
+        width: 40px; /* Botón más pequeño */
+        height: 40px;
+        font-size: 20px; /* Icono más pequeño */
+        bottom: 20px;
+        right: 20px;
+    }
+    .my-floatTelefono {
+        font-size: 16px; /* Icono más pequeño */
+    }
+
+    .numeroTelefono {
+        font-size: 12px; /* Texto más pequeño */
+    }
+}
 
 
 #estructurasMetalicas {
