@@ -538,7 +538,7 @@ header.abajo .navbar ul .Navegacion a::after {
   }
 
   .arrows button {
-    margin-bottom: -10%;
+    margin-bottom: 10%;
     width: 30px;
     height: 30px;
     font-size: 14px;
