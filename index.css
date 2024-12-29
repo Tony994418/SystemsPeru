@@ -719,6 +719,120 @@ header.abajo .navbar ul .Navegacion a::after {
 }
 
 
+/*Responsive Visualizador*/
+/* Responsive Visualizador */
+@media (max-width: 991px) {
+    #visualizador .containerVisualizador {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .thumbnail-container {
+        grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas */
+        gap: 10px;
+        max-width: 90%;
+    }
+
+    .thumbnail-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .thumbnail-container .thumbnail-subtitle {
+        grid-column: span 3; /* Subtítulo ocupa toda la fila */
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .img_container {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .img_title {
+        font-size: 1.8rem;
+        top: 5%;
+    }
+
+    .main_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnail {
+        width: 60px;
+    }
+
+    .thumbnail-title {
+        font-size: 0.8rem;
+    }
+
+    .thumbnail-subtitle {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #visualizador .containerVisualizador {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .thumbnail-container {
+        grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas */
+        max-width: 100%;
+    }
+
+    .thumbnail-container.left,
+    .thumbnail-container.right {
+        align-items: center;
+    }
+
+    .thumbnail-container .thumbnail-subtitle {
+        grid-column: span 3; /* Subtítulo ocupa toda la fila */
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .img_container {
+        width: 100%;
+    }
+
+    .img_title {
+        font-size: 1.5rem;
+        top: 10%;
+    }
+
+    .thumbnail {
+        width: 50px;
+    }
+
+    .thumbnail-title {
+        font-size: 0.7rem;
+    }
+
+    .thumbnail-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
 
 
 
