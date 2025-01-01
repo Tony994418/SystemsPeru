@@ -729,7 +729,7 @@ header.abajo .navbar ul .Navegacion a::after {
     }
 
     .thumbnail-container {
-        grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas */
+        grid-template-columns: repeat(4, 1fr); /* Cambiado a cuatro columnas */
         gap: 10px;
         max-width: 90%;
     }
@@ -739,7 +739,7 @@ header.abajo .navbar ul .Navegacion a::after {
     }
 
     .thumbnail-container .thumbnail-subtitle {
-        grid-column: span 3; /* Subtítulo ocupa toda la fila */
+        grid-column: span 4; /* Subtítulo ocupa toda la fila */
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 15px;
@@ -787,20 +787,27 @@ header.abajo .navbar ul .Navegacion a::after {
     }
 
     .thumbnail-container {
-        grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas */
+        grid-template-columns: repeat(5, 1fr); /* Mantener cuatro columnas también en móviles */
         max-width: 100%;
     }
 
-    .thumbnail-container.left,
+    .thumbnail-container.left{
+        align-items: center;
+        text-align: center;
+        margin-right: 20%;
+    }
     .thumbnail-container.right {
         align-items: center;
+        text-align: center;
+        margin-right: 20%;
+       
     }
 
     .thumbnail-container .thumbnail-subtitle {
-        grid-column: span 3; /* Subtítulo ocupa toda la fila */
+        grid-column: span 5; /* Subtítulo ocupa toda la fila */
         font-size: 1rem;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: -50%;
         text-align: center;
         color: #000000;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -824,10 +831,10 @@ header.abajo .navbar ul .Navegacion a::after {
     }
 
     .thumbnail-subtitle {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        
     }
 }
-
 
 
 
