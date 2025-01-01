@@ -747,16 +747,16 @@ header.abajo .navbar ul .Navegacion a::after {
     .img_container {
         text-align: center;
         display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center; /* Centra verticalmente */
+        justify-content: center; 
+        align-items: center; 
         width: 100%;
-        height: auto; /* Asegura que no se recorte la imagen */
+        height: auto; 
     }
     .main_img {
-        max-width: 100%; /* Asegura que no se desborde horizontalmente */
-        max-height: 100vh; /* Asegura que no se desborde verticalmente */
-        object-fit: contain; /* Muestra toda la imagen con espacios si es necesario */
-        margin: 0 auto; /* Centra la imagen dentro del contenedor */
+        max-width: 100%; 
+        max-height: 100vh; 
+        object-fit: contain; 
+        margin: 0 auto; 
     }
     .img_title {
         font-size: 1.5rem;
