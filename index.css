@@ -819,6 +819,7 @@ header.abajo .navbar ul .Navegacion a::after {
 
 
 
+
 #containertranding {
     display: flex;
     justify-content: center;
@@ -974,6 +975,58 @@ header.abajo .navbar ul .Navegacion a::after {
     }
   }
 
+
+
+  
+  /*Responsive Productos*/
+  @media screen and (max-width: 768px) {
+    .TituloProductos {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card__content {
+        gap: 1rem;
+    }
+
+    .card__article {
+        width: 100%; /* Cards take full width */
+        max-width: 320px;
+    }
+
+    .card__data {
+        padding: 1rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none; /* Hide navigation buttons on very small screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card__shadow {
+        display: none; /* Simplify visuals for very small screens */
+    }
+
+    .card__description {
+        font-size: 0.9rem;
+    }
+
+    .card__button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+  
 .floatTelefono1 {
     position: fixed;
     right: 20px; 
