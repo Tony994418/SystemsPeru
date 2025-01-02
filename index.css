@@ -1207,6 +1207,7 @@ header.abajo .navbar ul .Navegacion a::after {
 }
 
 
+
 #estructurasMetalicas {
     display: flex;
     flex-direction: column;
@@ -1317,6 +1318,7 @@ header.abajo .navbar ul .Navegacion a::after {
     color: #fff;
 }
 
+
 @media only screen and (max-width: 768px) {
     .container-card {
         grid-template-columns: repeat(2, 1fr);
@@ -1324,11 +1326,23 @@ header.abajo .navbar ul .Navegacion a::after {
 }
 
 @media only screen and (max-width: 480px) {
+    #estructurasMetalicas .MisionVision {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 90px 70px;
+        margin-top: 7%;
+        justify-content: center;
+        text-align: center;
+    }
     .container-card {
         grid-template-columns: 1fr;
     
     }
 }
+
+
+
+
+
 
 
 .serviciosTarjetas {
