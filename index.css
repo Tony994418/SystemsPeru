@@ -750,7 +750,7 @@ header.abajo .navbar ul .Navegacion a::after {
         justify-content: center; 
         align-items: center; 
         width: 100%;
-        height: auto; 
+        height: 35%; 
     }
     .main_img {
         max-width: 100%; 
