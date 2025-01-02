@@ -505,6 +505,18 @@ header.abajo .navbar ul .Navegacion a::after {
 
 /* Responsivo para móviles (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
+    header .logo {
+        width: 70px;
+        height: 60px;
+        columns: #fff;
+        font-weight: bold;
+        font-size: 2em;
+        letter-spacing: 2px;
+        transition: 1.5s;
+        text-decoration: none;
+        margin-top: 10%;
+    
+    }
   #principal .TituloPrincipalEmpresa {
     font-size: 18px;
     margin-top: 55%;
@@ -723,7 +735,15 @@ header.abajo .navbar ul .Navegacion a::after {
 
 /*Responsive Visualizador*/
 @media (max-width: 768px) {
-   
+    #visualizador {
+        position: relative;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    
+    }
     .thumbnail-container {
         margin-bottom: 60%;
         
@@ -735,12 +755,12 @@ header.abajo .navbar ul .Navegacion a::after {
     }
 
     .thumbnail-container.left{
-        margin-top: 45%;
+        margin-top: 50%;
     background-color: transparent;
     
     }
     .thumbnail-container.right {
-        margin-top: 45%;
+        margin-top: 50%;
         background-color: transparent;
     }
 
