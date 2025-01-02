@@ -121,7 +121,7 @@ header ul li a {
 }
 
 .menu-icono {
-    margin-top: 15px;
+    margin-top: 20px;
     width: 27px;
 }
 
@@ -507,7 +507,7 @@ header.abajo .navbar ul .Navegacion a::after {
 @media screen and (max-width: 480px) {
     header .logo {
         width: 70px;
-        height: 60px;
+        height: 55px;
         columns: #fff;
         font-weight: bold;
         font-size: 2em;
