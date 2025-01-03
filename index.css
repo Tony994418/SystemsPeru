@@ -1630,7 +1630,11 @@ header.abajo .navbar ul .Navegacion a::after {
     }
 
     #formularioUsuario .contact-info:before {
-        display: none;
+        top: -200px;
+        left: initial;
+        right: -40px;
+        width: 540px;
+        height: 540px;
     }
 
 
