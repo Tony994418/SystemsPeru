@@ -475,6 +475,75 @@
 }
 
 
+/* Para pantallas pequeñas */
+@media (max-width: 576px) {
+  .puertas-automaticas {
+    padding: 10px;
+  }
+
+  .SubtituloServicios {
+    font-size: 18px;
+    margin-top: 5%;
+  }
+
+  /* Ajuste para columnas */
+  .columna-izquierda,
+  .columna-central {
+    display: block; /* Solo estas columnas se muestran */
+    width: 100%; /* Que ocupen el 100% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenido */
+  }
+
+  .columna-derecha {
+    display: none; /* Oculta completamente la columna derecha */
+    width: 0; /* Asegura que no ocupe espacio */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Deshabilitar galería y footer */
+  #TituloGaleriaImagenes,
+  .gallery,
+  .swiper-slide img,
+  .footer {
+    display: none;
+  }
+}
+
+/* Para pantallas más pequeñas (400px o menos) */
+@media (max-width: 400px) {
+  .SubtituloServicios {
+    font-size: 16px;
+  }
+
+  .navbar ul.menu li a {
+    display: none; /* Oculta el menú */
+  }
+
+  .preview-box {
+    display: none; /* Oculta la caja de previsualización */
+  }
+
+  .columna-izquierda,
+  .columna-central {
+    width: 100%; /* Que ocupen el ancho total sin desbordarse */
+  }
+
+  .columna-derecha {
+    display: none; /* Oculta completamente la columna derecha */
+    width: 0; /* Asegura que no ocupe espacio */
+    margin: 0;
+    padding: 0;
+  }
+
+  #TituloGaleriaImagenes,
+  .gallery {
+    display: none; /* Oculta la galería y su título */
+  }
+}
+
+
+
 
 </style>
 
