@@ -394,6 +394,12 @@
 
 
   @media (max-width: 480px) {
+    #ServiciosHero {
+        height: 80vh; /* Usa altura completa de la ventana */
+        background-attachment: scroll; /* Mejora el rendimiento en dispositivos móviles */
+        background-size: cover; /* Asegura que el fondo cubra toda el área */
+        background-position: center; /* Centra el fondo */
+    }
   .textoServicios {
     font-size: 14px;
   }
@@ -405,17 +411,17 @@
   #wrapperTarjetasServicios {
     grid-template-columns: 1fr;
     gap: 10px;
-    justify-content: center; /* Asegura que las tarjetas se centren */
+    justify-content: center;
   }
 
   .card {
-    margin: 0 auto; /* Centra cada tarjeta individualmente */
+    margin: 0 auto;
   }
 }
   </style>
 
   <script>
-    // Enviar los datos del formulario a Whatsapp
+    
   document.getElementById('send-btn').addEventListener('click', function() {
       // Obtener los valores de los campos
       const name = document.getElementById('name').value;
