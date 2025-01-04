@@ -485,7 +485,9 @@
 
   .columna.columna-derecha {
     flex: 1 1 100%; /* Coloca la columna derecha debajo, ocupando el 100% del ancho */
-    margin-left: -40%;
+    display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
   }
 
   .columna.columna-derecha img {
@@ -501,6 +503,30 @@
 
 }
 
+@media (max-width: 768px) {
+  #GaleriaImagenes {
+    padding: 0px 20px; /* Reduce aún más el padding lateral */
+  }
+
+  .gallery .image {
+    width: calc(100% - 14px); /* Una sola columna en pantallas más pequeñas */
+  }
+
+  #TituloGaleriaImagenes {
+    margin-bottom: 0; /* Ajuste del margen en pantallas pequeñas */
+  }
+}
+
+/* Pantalla de móvil (hasta 393px) */
+@media (max-width: 393px) {
+  #GaleriaImagenes {
+    padding: 0px 10px; /* Ajuste de padding para pantallas muy pequeñas */
+  }
+
+  .gallery .image {
+    width: calc(100% - 14px); /* Una sola columna para pantallas muy pequeñas */
+  }
+}
 
 
 
