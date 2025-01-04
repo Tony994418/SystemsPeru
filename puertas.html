@@ -226,12 +226,13 @@
 
  .puertas-automaticas {
   display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
   gap: 20px;
   padding: 20px;
 }
 
 .columna {
-  flex: 1;
+  flex: 1 1 100%; /* Por defecto, las columnas ocupan el 100% del ancho */
   padding: 10px;
 }
 
@@ -467,79 +468,37 @@
     width: calc(100% / 2);
   }
 }
-@media(max-width: 600px){
-  .gallery .image{
-    width: 100%;
-    padding: 4px;
-  }
-}
 
-
-/* Para pantallas pequeñas */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .puertas-automaticas {
-    padding: 10px;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas más pequeñas */
   }
 
-  .SubtituloServicios {
-    font-size: 18px;
-    margin-top: 5%;
+  .columna {
+    flex: 1 1 100%; /* Asegura que cada columna ocupe el 100% del ancho disponible */
   }
 
-  /* Ajuste para columnas */
-  .columna-izquierda,
-  .columna-central {
-    display: block; /* Solo estas columnas se muestran */
-    width: 100%; /* Que ocupen el 100% del ancho de la pantalla */
-    margin: 0 auto; /* Centra el contenido */
+  .columna.columna-izquierda,
+  .columna.columna-central {
+    flex: 1 1 50%; /* Coloca las columnas izquierda y central lado a lado, cada una ocupando el 50% */
   }
 
-  .columna-derecha {
-    display: none; /* Oculta completamente la columna derecha */
-    width: 0; /* Asegura que no ocupe espacio */
-    margin: 0;
-    padding: 0;
+  .columna.columna-derecha {
+    flex: 1 1 100%; /* Coloca la columna derecha debajo, ocupando el 100% del ancho */
+    margin-left: -40%;
   }
 
-  /* Deshabilitar galería y footer */
-  #TituloGaleriaImagenes,
-  .gallery,
-  .swiper-slide img,
-  .footer {
-    display: none;
-  }
-}
-
-/* Para pantallas más pequeñas (400px o menos) */
-@media (max-width: 400px) {
-  .SubtituloServicios {
-    font-size: 16px;
+  .columna.columna-derecha img {
+    width: 100%; /* Ajusta el ancho de las imágenes a un tamaño más pequeño */
+    max-width: 250px; /* Limita el ancho máximo de las imágenes */
+    height: auto; /* Mantiene la proporción original de las imágenes */
   }
 
-  .navbar ul.menu li a {
-    display: none; /* Oculta el menú */
+  .swiper-button-next,
+  .swiper-button-prev {
+   display: none;
   }
 
-  .preview-box {
-    display: none; /* Oculta la caja de previsualización */
-  }
-
-  .columna-izquierda,
-  .columna-central {
-    width: 100%; /* Que ocupen el ancho total sin desbordarse */
-  }
-
-  .columna-derecha {
-    display: none; /* Oculta completamente la columna derecha */
-    width: 0; /* Asegura que no ocupe espacio */
-    margin: 0;
-    padding: 0;
-  }
-
-  #TituloGaleriaImagenes,
-  .gallery {
-    display: none; /* Oculta la galería y su título */
-  }
 }
 
 
