@@ -60,6 +60,7 @@
         <li class="opcion" data-info="seccionales">Intercomunicadores</li>
         <li class="opcion" data-info="batientes">Sistemas de Alarmas</li>
         <li class="opcion" data-info="corredizas">Cercos Eléctricos</li>
+        <br>
         <li class="opcion" ><a href="#TituloGaleriaImagenes" class="opcion" style="text-decoration: none;">Galería</a></li>
       </ul>
     </div>
@@ -491,6 +492,108 @@
     padding: 4px;
   }
 }
+@media (max-width: 768px) {
+    .puertas-automaticas {
+      flex-wrap: wrap;
+      /* Permite que las columnas se envuelvan en pantallas más pequeñas */
+    }
+
+    .columna {
+      flex: 1 1 100%;
+      /* Asegura que cada columna ocupe el 100% del ancho disponible */
+    }
+
+    .columna.columna-izquierda,
+    .columna.columna-central {
+      flex: 1 1 50%;
+      /* Coloca las columnas izquierda y central lado a lado, cada una ocupando el 50% */
+    }
+
+    .columna.columna-derecha {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .columna.columna-derecha img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    #GaleriaImagenes {
+      padding: 0px 20px;
+      /* Reduce aún más el padding lateral */
+    }
+
+    .gallery .image {
+      width: calc(100% - 14px);
+      /* Una sola columna en pantallas más pequeñas */
+    }
+
+    #TituloGaleriaImagenes {
+      margin-bottom: 0;
+      /* Ajuste del margen en pantallas pequeñas */
+    }
+  }
+
+  /* Pantalla de móvil (hasta 393px) */
+  @media (max-width: 480px) {
+
+    body,
+    html {
+      overflow-x: hidden;
+    }
+
+    #PuertasHero {
+      height: 70vh;
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .Nosotrossubtitulo {
+      padding-top: 10px;
+      font-size: 25px;
+    }
+
+    .SubtituloServicios {
+      font-size: 25px;
+    }
+    #TituloGaleriaImagenes {
+      font-size: 2em;
+      padding-bottom: 10px;
+      
+    }
+
+    .columna-izquierda {
+      border-right: none;
+    }
+    .columna.columna-derecha {
+     margin-left: -40%;
+    
+    }
+
+    #GaleriaImagenes {
+      padding: 0px 10px;
+     
+    }
+
+    .gallery .image {
+      width: calc(100% - 14px);
+      
+    }
+  }
+
 
 
 </style>
